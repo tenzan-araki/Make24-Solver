@@ -11,3 +11,33 @@ Napoleon achieved many remarkable victories and expanded his empire throughout m
 A few minutes later, I found a spider as I stared closely at that stain on the ceiling. Actually I think there were also some baby spiders.
 
 Brutally defeated, I sat on my bed that night thinking about how fast she was and how I would never be able to beat that directly. Once again she proved her strength. I am sure she has a bright future ahead of her. So here, with tears of lameness, I present to you a solver that I used to prove to her later that week that I can win as long as I have a computer. It could be quite useful if you also have a smart cousin.
+
+## Installation
+After cloning the repository, the `make24` package can be installed by running
+```
+pip install -e .
+```
+in the root directory. This allows us to simply import our functions, e.g., by running
+```
+from make24 import make24_solver
+```
+in Python.
+
+## Structure
+```
+.
+├── README.md
+├── VERSION.txt
+├── demos
+│   ├── Demo of Make 24 Solver.ipynb
+│   ├── Generate neq_eqs_TF array.ipynb
+│   └── neq_eqs_TF.csv
+├── make24
+│   ├── __init__.py
+│   ├── analysis.py
+│   ├── solver.py
+│   └── utils.py
+├── requirements.txt
+└── setup.py
+
+```
