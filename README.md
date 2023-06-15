@@ -1,10 +1,10 @@
 # Make 24 Solver
 
-There is this card game called ***Make 24*** where you apply arithmetic operations on the numbers on four cards to make 24. My primary school cousin is very smart, and she is so good at this game that no one in the family stood a chance against her. Since I've always lived abroad, I never played against her until this traumatic summer holiday. Long story short, I felt like a chihuahua fighting a bull. 
+There's a card game called ***Make 24***, where you apply arithmetic operations on the numbers on four cards to make 24. My cousin who goes to primary school is very smart, and she is so good at this game that no one in the family stood a chance against her. Since I've always lived abroad, I never played against her until this traumatic summer holiday. Long story short, I felt like a chihuahua fighting a bull. 
 
-Brutally defeated, I sat on my bed that night thinking about how I would never be able to win directly. So here, with tears of lameness, I present to you a solver that I wrote to prove that I can still win as long as I have a computer. I used it against her later that week, mostly winning, and from what I heard she wrote an essay about it for her homework. I feel honored to be mentioned in the champion's assignment.
+Brutally defeated, I sat on my bed that night thinking about how I would never be able to win directly. So here, with tears of lameness, I present to you a solver that I wrote to prove that I can still win as long as I have a computer. I used it against her later that week quite successfully, and from what I heard she wrote an essay about it for her homework. I feel honored to be mentioned in the champion's assignment.
 
-So the code here could be quite useful for those who have a smart cousin. For the sole purpose of winning, just try running the code in the notebook `Demo of Make 24 Solver.ipynb`. This demo uses the code in this repository, so check the rest of the repository only if you are interested in how the solver works.
+So the code here should be quite useful for those who have a smart cousin. For the sole purpose of winning, just try running the code in the notebook `Demo of Make 24 Solver.ipynb`. Solutions are found in milliseconds, so it is limited by the user's typing speed. There are no plans to improve this by enabling audio or camera functionalities, because it should already be sufficiently fast to defeat most cousins. Check the rest of the repository only if you are interested in how the solver works.
 
 ## Rules
 Here are "our" rules for ***Make 24***. It could differ from other standard rules, but it is mostly consistent with them, well-defined, and entertaining.
