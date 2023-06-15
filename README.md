@@ -1,6 +1,6 @@
 # Make 24 Solver
 
-There is this card game called ***Make 24*** where you apply arithmetic operations on the numbers on four cards to make 24. My primary school cousin is very smart, and she is so good at this game that no one in the family stood a chance against her. Since I've always lived abroad, I never played against her until this traumatic summer holiday. Long story short, I felt like a Chihuahua fighting a bull. 
+There is this card game called ***Make 24*** where you apply arithmetic operations on the numbers on four cards to make 24. My primary school cousin is very smart, and she is so good at this game that no one in the family stood a chance against her. Since I've always lived abroad, I never played against her until this traumatic summer holiday. Long story short, I felt like a chihuahua fighting a bull. 
 
 Brutally defeated, I sat on my bed that night thinking about how I would never be able to win directly. So here, with tears of lameness, I present to you a solver that I wrote to prove that I can still win as long as I have a computer. I used it against her later that week, mostly winning, and from what I heard she wrote an essay about it for her homework. I feel honored to be mentioned in the champion's assignment.
 
