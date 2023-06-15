@@ -1,14 +1,45 @@
 # Make 24 Solver
 
-On a scorching hot summer day in Shenzhen, China, I was having lunch with my family and some close relatives. By my side sat my cousin, an energetic primary school student whose schedule overflowed with extracurricular activities.
+My primary school cousin is very smart, and she is so good at this game that no one in the family stood a chance against her. Since I've always lived abroad, I never played against her until this traumatic summer holiday. Long story short, I felt like a Chihuahua fighting a bull. 
 
-In our conversation, her parents mentioned a card game about arithmetics called <a href="https://en.wikipedia.org/wiki/24_(puzzle)" target="_blank">***Make 24***</a>. They told me that she has been practicing it so much that they no longer stood a chance against her. As the champion in her family, she was looking for someone to challenge her, and that's how I became her next contender.
+Brutally defeated, I sat on my bed that night thinking about how I would never be able to win directly. So here, with tears of lameness, I present to you a solver that I wrote to prove that I can still win as long as I have a computer. I used it against her later that week, mostly winning, and from what I heard she wrote an essay about it for her homework. I feel honored to be mentioned in the champion's assignment.
 
-Napoleon achieved many remarkable victories and expanded his empire throughout much of continental Europe, but even he was defeated in the Battle of Waterloo in 1815. As a person who studied physics and math in university, the whole family thought that if someone were to deliver the Battle of Waterloo to her ambitious expedition, it had to be me. Unfortunately for her, I like competitions, and especially when it comes to math there is no mercy. I just hoped that after I defeat her, she won't lose confidence in this game or even start staring at the stain on the ceiling after being struck by how cruel reality is. 
+So the code here could be quite useful for those who have a smart cousin.
 
-The battle began, and a few minutes later, I found a few spiders as I stared closely at that stain on the ceiling. I think they were a family.
+## Rules
+Here are "our" rules for ***Make 24***. It could differ from other standard rules, but it is mostly consistent with them, well-defined, and entertaining.
 
-Brutally defeated, I sat on my bed that night thinking about how fast she was and how I would never be able to beat that directly. Our Napoleon proved her strength, and I am sure she has a bright future ahead of her. So here, with tears of lameness, I present to you a solver that I wrote to prove that I can still win as long as I have a computer. I used it against her later that week, mostly winning, and from what I heard she wrote an essay about it for school. It could be quite useful if you also have a smart cousin.
+1. Game Components:
+   - A standard deck of 52 playing cards.
+   - Each card has a rank and a suit, but suits are irrelevant here.
+   - For the purposes of this version of the game:
+     - Cards with ranks A, J, Q, and K are assigned values 1, 11, 12, and 13 respectively.
+     - All other cards have their face value (2-10).
+
+2. Objective:
+   - The goal of the game is to be the first player to find a valid arithmetic expression using the four given cards to equal the target number 24.
+   - You must use all four cards exactly once in your expression.
+   - Only basic arithmetic operations (addition, subtraction, multiplication, and division) and parentheses are allowed.
+   - Intermediate expressions can be fractions.
+
+3. Setup:
+   - Four cards are dealt from the deck and placed face up on the table.
+   - The four cards are placed on the side so that the remaining number of cards in the deck reduces after either a 24 has been made by a player, the combination of numbers was determined to have no solutions, or neither player found a solution.
+
+4. Gameplay:
+   - Players attempt to find a valid arithmetic expression using the four cards to equal the target number 24, as quickly as possible.
+   - The first player to find a valid expression scores one point.
+   - If neither player finds a solution after a long time, it is a draw and no one scores.
+   - If a player thinks that there is no solution given the combination of numbers, the player can call "no solution". In that case, the opponent has ten seconds to find a solution. If the opponent cannot find a solution within the time limit, the player who said "no solution" scores one point.
+
+5. Scoring:
+   - The first player to find a valid arithmetic expression that equals 24 using the given cards scores one point.
+   - If a player says "no solution" and their opponent fails to find a solution within the time limit, the player who said "no solution" scores one point.
+   - No one scores in a draw.
+
+6. Winning:
+   - Keep dealing four cards from the deck until there are no cards remaining.
+   - The player with the highest score at the end wins.
 
 ## Installation
 After cloning the repository, the `make24` package can be installed by running
