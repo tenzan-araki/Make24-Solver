@@ -16,25 +16,25 @@ with open(file_name, 'r') as csvfile:
             row_list.append(int(col))
         neq_eqs_TF_all.append(row_list)
 
-def make24_solver(A1, A2, A3, A4, mode='one-rand', print_ok=True):
+def make24_solver(A1, A2, A3, A4, mode='random', print_ok=True):
     r"""finds a sequence of operations (if there exists) that makes 24 out of four numbers A1, A2, A3, and A4
     The solver checks all non-equivalent possibilities to see which ones produce 24
     
     Args:
         A1: number on the first card.
-        A1: number on the second card.
-        A1: number on the third card.
-        A1: number on the fourth card.
+        A2: number on the second card.
+        A3: number on the third card.
+        A4: number on the fourth card.
         mode: the mode of the solver. The default is set to produce one random solution if there exist at least one.
         print_ok: boolean flag to choose whether or not to print solutions.
 
     Mode options:
-        mode == 'one-rand' : finds only one random solution even if multiple solutions exist (same speed as 'all')
-        mode == 'one-fixed' : finds only one fixed solution even if multiple solutions exist (fastest)
-        mode == 'all' : finds all solutions
+        mode == 'random' : displays one solution among all at random according to a uniform distribution
+        mode == 'first' : displays the solution that was found first
+        mode == 'all' : diplays all solutions
     
     Returns:
-        The number of solutions found (returns 1 if mode == 'one_fixed' because only one is solved).
+        The number of solutions found (returns 1 if mode == 'first' because only one is solved).
     """
     num_sol = 0; # number of solutions initialized to 0
     sol_list = []; # list of solutions for 'all' mode
@@ -182,12 +182,12 @@ def make24_solver(A1, A2, A3, A4, mode='one-rand', print_ok=True):
                                             elif (f_seq[2].__name__ == 'f_divide_2'):
                                                 text_3 = text_1 + ' ÷ ' + text_2;
 
-                                        if (mode == 'one-fixed'):
-                                            # print solution and return number of solutions found (always 1 for 'one-fixed' mode)
+                                        if (mode == 'first'):
+                                            # print solution and return number of solutions found (always 1 for 'first' mode)
                                             if print_ok:
                                                 print(text_3 + ' = 24');
                                             return 1;
-                                        elif ((mode == 'one-rand') or (mode == 'all')):
+                                        elif ((mode == 'random') or (mode == 'all')):
                                             # append solution into list of independent solutions
                                             sol_list.append(text_3 + ' = 24');
                                         else:
@@ -200,7 +200,7 @@ def make24_solver(A1, A2, A3, A4, mode='one-rand', print_ok=True):
             # if none of the 3888 possibilities made 24
             print('Cannot make 24.');
         else:
-            if mode == 'one-rand':
+            if mode == 'random':
                 sol_idx = random.randint(0, num_sol - 1);
                 print(sol_list[sol_idx]);
             elif mode == 'all':

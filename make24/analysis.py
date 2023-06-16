@@ -12,7 +12,7 @@ def make24_analysis_1():
         for A2 in range(1,A1+1):
             for A3 in range(1,A2+1):
                 for A4 in range(1,A3+1):
-                    count += make24_solver(A1, A2, A3, A4, mode='one-fixed', print_ok=False);
+                    count += make24_solver(A1, A2, A3, A4, mode='first', print_ok=False);
     prob = round(1 - count/1820, 3);
     prob_pc = prob * 100;
     print('Pr(No Solution) =', prob_pc, '%');
