@@ -134,7 +134,6 @@ def get_nonequiv_eqs_array():
 
                                     if not (D_eq in neq_eqs_list):
                                         # only runs if an equivalent equation has never appeared before
-
                                         neq_eqs_list.append(D_eq)
                                         neq_eqs_TF[eqs_idx] = 1
 
